@@ -1,0 +1,33 @@
+{
+  "settingsSync.ignoredSettings": [],
+  "editor.fontFamily": "Montserrat, Consolas, 'Courier New', monospace",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 1,
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "files.exclude": {
+    "**/.vscode": true
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "files.autoSave": "onWindowChange",
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.editorAssociations": {
+    "*.css": "tailwindcss"
+  },
+  "oneDarkPro.vivid": true,
+  "css.lint.unknownAtRules": "ignore",
+  "editor.wordWrap": "on",
+  "cSpell.userWords": ["tailwindcss"],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "terminal.integrated.fontFamily": "Hack Nerd Font, monospace",
+  "terminal.integrated.fontSize": 13
+}
