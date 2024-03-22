@@ -1,33 +1,57 @@
 {
   "settingsSync.ignoredSettings": [],
+  //  editor
   "editor.fontFamily": "Montserrat, Consolas, 'Courier New', monospace",
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": 1,
-  "editor.tabSize": 2,
+  "editor.fontSize": 16,
+  "editor.wordWrap": "on",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.linkedEditing": true,
+  "editor.fontLigatures": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "window.zoomLevel": 0,
+  //  files
+  "files.autoSave": "onWindowChange",
+  "files.associations": {
+    "*.tsx": "typescriptreact"
   },
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "files.exclude": {
     "**/.vscode": true
   },
+  //  default formatter
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  //  terminal
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "Hack Nerd Font, monospace",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.env.windows": {},
+  // git
   "git.openRepositoryInParentFolders": "never",
-  "files.autoSave": "onWindowChange",
+  // languages
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.format.insertSpaceAfterConstructor": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescriptreact]": {},
+  "[typescript]": {},
+  //  workbench
+  "workbench.editor.languageDetection": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.editorAssociations": {
     "*.css": "tailwindcss"
   },
+  // others
+  "explorer.confirmDelete": false,
   "oneDarkPro.vivid": true,
   "css.lint.unknownAtRules": "ignore",
-  "editor.wordWrap": "on",
-  "cSpell.userWords": ["tailwindcss"],
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.guides.bracketPairs": "active",
-  "terminal.integrated.fontFamily": "Hack Nerd Font, monospace",
-  "terminal.integrated.fontSize": 13
+  "cSpell.userWords": ["persistor", "tailwindcss"],
+  "console-ninja.featureSet": "Community",
+  "prisma.fileWatcher": true
 }
