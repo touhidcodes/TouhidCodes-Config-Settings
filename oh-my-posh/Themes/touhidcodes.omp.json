@@ -1,0 +1,177 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "vermilion": "#E3651D",
+    "orange": "#FF8F00",
+    "orchid": "#AD49E1",
+    "violet": "#BC93FF",
+    "azure": "#42A9FF",
+    "turquoise": "#08D9D6",
+    "pistachio": "#98C379"
+  },
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:azure",
+          "style": "plain",
+          "template": "\u256d\u2500\u2500 <p:orange>Hay <p:vermilion>TouhidCodes</>! What can I do for you?</>",
+          "type": "session"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "right",
+      "segments": [
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": " \ueb05  ",
+          "type": "text"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\ue781 ",
+          "type": "node"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\ue235 ",
+          "type": "python"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\uF25D ",
+          "type": "r"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\ue624 ",
+          "type": "ruby"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\uf81a ",
+          "type": "php"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\uf7d3 ",
+          "type": "go"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\ue77f ",
+          "type": "dotnet"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\uf270 ",
+          "type": "aws"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\uf308 ",
+          "type": "docker"
+        },
+        {
+          "foreground": "p:pistachio",
+          "style": "plain",
+          "template": "\ue706 ",
+          "type": "java"
+        },
+        {
+          "foreground": "p:azure",
+          "style": "plain",
+          "template": "<> \ue0b1 </>",
+          "type": "text"
+        },
+        {
+          "foreground": "p:turquoise",
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "cherry_pick_icon": "\ue29b ",
+            "commit_icon": "\uf417 ",
+            "fetch_status": false,
+            "fetch_upstream_icon": false,
+            "merge_icon": "\ue727 ",
+            "no_commits_icon": "\uf0c3 ",
+            "rebase_icon": "\ue728 ",
+            "revert_icon": "\uf0e2 ",
+            "tag_icon": "\uf412 "
+          },
+          "template": "{{ .HEAD }}",
+          "style": "plain",
+          "type": "git"
+        },
+        {
+          "foreground": "p:azure",
+          "style": "plain",
+          "template": "<> \ue0b1 </>",
+          "type": "text"
+        },
+        {
+          "foreground": "p:violet",
+          "properties": {
+            "time_format": "15:04"
+          },
+          "style": "diamond",
+          "template": "\uf43a  {{ .CurrentDate | date .Format }}",
+          "type": "time"
+        },
+        {
+          "foreground": "p:azure",
+          "style": "plain",
+          "template": "<> \ue0b1 </>",
+          "type": "text"
+        },
+        {
+          "foreground": "#FFA24C",
+          "properties": {
+            "style": "roundrock",
+            "threshold": 0
+          },
+          "style": "plain",
+          "template": "\u26a1{{ .FormattedMs }}\u2800",
+          "type": "executiontime"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "p:azure",
+          "style": "plain",
+          "template": "\u2570\u2500",
+          "type": "text"
+        },
+        {
+          "foreground": "p:azure",
+          "foreground_templates": ["{{ if gt .Code 0 }}p:azure{{ end }}"],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "\ue285\ueab6 ",
+          "type": "status"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "version": 3
+}
